@@ -1,7 +1,7 @@
 -- Both `!=` and `<>` are NOT EQUAL operators.
 -- [IMP] Standard SQL format: YYYY-MM-DD ; For now, treat it like a string.
 
--- USE sql_store;
+USE sql_store;
 
 SELECT *
 FROM customers
