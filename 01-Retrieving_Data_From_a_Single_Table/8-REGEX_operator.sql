@@ -2,7 +2,7 @@
 -- `^` is used to indicate the beginning of a string.
 -- `$` is used to indicate the end of a string.
 -- `|` is used to represent an `OR` operation and multiple search patterns.
--- `[]` is a shorthand for an `|` on all of the contents (i.e, [abc] matches a, b or c). Also, `[]` can be used before or after.
+-- `[]` is a shorthand for an `|` on all of the contents (i.e, [abc] matches a or b or c). Also, `[]` can be used before or after.
 
 USE sql_store;
 
