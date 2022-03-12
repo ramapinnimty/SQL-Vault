@@ -1,14 +1,14 @@
--- Copying data from one table to another. This is very useful as we do not want to code redundantly to insert multiple values.
+-- Copying data from one table to another (new table). This is very useful as we do not want to code redundantly to insert multiple values.
 -- Syntax: `CREATE TABLE new_table_name AS` ...
 
 USE sql_store;
 
 CREATE TABLE orders_archived AS
 SELECT * FROM orders; -- This is a "sub-query" i.e, it is part of another SQL statement.
--- NOTE: When we use this technique, MySQL will not assign & Auto Increment PK by default (Tip: click the 'design' icon).
+-- NOTE: When we use this technique, MySQL will not assign any attributes from the original table (i.e, Auto Increment the PK by default etc.) (Tip: click the 'design' icon to check this).
 
--- Copy only a subset of records from the 'orders' table into the 'orders_archived' table.
--- Tip: Use the SELECT statement as a sub-query to the INSERT statement.
+-- Copying a subset of records from the 'orders' table into the 'orders_archived' table.
+-- Tip: Use the SELECT statement as a "sub-query" to the INSERT statement.
 INSERT INTO orders_archived
 SELECT *
 FROM orders
